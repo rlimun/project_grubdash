@@ -13,7 +13,7 @@ describe("dishes router", () => {
   });
 
   describe("create method", () => {
-    test.only("creates a new dish and assigns id", async () => {
+    test("creates a new dish and assigns id", async () => {
       const expectedName = "creates a new dish and assigns id";
       const response = await request(app)
         .post(ATTACHED_PATH)
